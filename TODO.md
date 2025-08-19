@@ -3,10 +3,10 @@
 #### Services:
 
 - Init
-- API 
+- API
 - Translation
-- Theme 
-- Local Storage 
+- Theme
+- Local Storage
 
 #### Pages
 
@@ -19,13 +19,13 @@
 
 - Header
 - Footer
-- Language selector 
-- Event List 
-- Gallery 
-- Contact 
-- Message modal 
+- Language selector
+- Event List
+- Gallery
+- Contact
+- Message modal
 
-#### Accessibility 
+#### Accessibility
 
 - Meet **WCAG 2.1 Level AA** standards
 - Provide **alt text** for all images and media
