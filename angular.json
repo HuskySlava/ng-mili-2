@@ -7,7 +7,23 @@
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
-					"style": "scss"
+					"style": "scss",
+					"type": "component"
+				},
+				"@schematics/angular:directive": {
+					"type": "directive"
+				},
+				"@schematics/angular:service": {
+					"type": "service"
+				},
+				"@schematics/angular:guard": {
+					"typeSeparator": "."
+				},
+				"@schematics/angular:interceptor": {
+					"typeSeparator": "."
+				},
+				"@schematics/angular:pipe": {
+					"typeSeparator": "."
 				}
 			},
 			"root": "",
@@ -24,6 +40,7 @@
 						"tsConfig": "tsconfig.app.json",
 						"inlineStyleLanguage": "scss",
 						"assets": [
+							"src/assets",
 							{
 								"glob": "**/*",
 								"input": "public"
@@ -82,6 +99,7 @@
 						"tsConfig": "tsconfig.spec.json",
 						"inlineStyleLanguage": "scss",
 						"assets": [
+							"src/assets",
 							{
 								"glob": "**/*",
 								"input": "public"

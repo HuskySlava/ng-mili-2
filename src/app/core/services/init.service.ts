@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { sleep } from '../../shared/utils';
+import { sleep } from '@shared/utils';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,7 @@ export class InitService {
 	public async init() : Promise<void> {
 		// FIXME:
 		// Remove Simulate init
-		await sleep(3000)
+		await sleep(1000)
 	}
 
 }

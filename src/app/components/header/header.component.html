@@ -1,0 +1,12 @@
+<header>
+	<nav>
+		<ul>
+			@for (item of menuItems; track item.id) {
+				<li [ngClass]="{'active': selectedMenuItem.id === item.id}"
+					(click)="menuItemChange(item)">
+					{{item.title}}
+				</li>
+			}
+		</ul>
+	</nav>
+</header>

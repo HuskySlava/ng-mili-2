@@ -5,15 +5,35 @@
 	<title>MiLi Production</title>
 	<base href="/">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<style>
-		html, body {
-			padding: 0;
-			margin: 0;
-			color: #fff;
-			background: #000;
+
+		:root {
+			--color-background: #000;
+			--color-text-primary: #fff;
+			--color-accent: #950000;
+			--color-accent-alt: #430000;
+			--color-border: #606060;
 		}
 
+		*, *::before, *::after {
+			box-sizing: inherit;
+		}
+		html, body {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+			background: var(--color-background);
+			color: var(--color-text-primary);
+			font-family: Roboto, 'sans-serif';
+		}
+
+		body {
+			height: 100vh;
+		}
 
 		@keyframes equalize {
 			0%, 100% {
@@ -46,7 +66,7 @@
 				width: 10px; /* Width of each bar */
 				height: 10px; /* Initial height */
 				margin: 0 4px; /* Space between bars */
-				background-color: #950000;
+				background-color: var(--color-accent);
 				animation: equalize 0.7s infinite ease-in-out;
 			}
 
