@@ -8,6 +8,11 @@
 - Theme
 - Local Storage
 
+#### Core 
+
+- Typography management 
+- Responsiveness
+
 #### Pages
 
 - Events / Home
