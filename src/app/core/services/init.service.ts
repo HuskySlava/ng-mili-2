@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
-import { sleep } from '@shared/utils';
+import {LiveEventsService} from '@core/services/live-events.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class InitService {
-	constructor() {}
+	constructor(private liveEventsService: LiveEventsService) {
+
+	}
 
 	public async init() : Promise<void> {
-		// FIXME:
-		// Remove Simulate init
-		await sleep(1000)
+		await this.liveEventsService.init();
 	}
 
 }

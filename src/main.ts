@@ -3,6 +3,8 @@ import { APP_INITIALIZER } from '@angular/core';
 import {appConfig} from './app/app.config';
 import {App} from './app/app';
 import {InitService} from '@core/services/init.service';
+import { provideRouter } from '@angular/router';
+import {routes} from './app/app.routes';
 
 function initApp(initService: InitService) {
 	return async () => {
@@ -23,7 +25,8 @@ bootstrapApplication(App, {
 				useFactory: initApp,
 				multi: true,
 				deps: [InitService]
-			}
+			},
+			provideRouter(routes)
 		],
 	}
 ).catch((err) => console.error(err));

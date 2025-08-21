@@ -1,0 +1,21 @@
+@if (liveEvent){
+	<div class="event-card">
+		<div class="event-image">
+			<img [src]="liveEvent.orderImgUrl" alt="Rock Concert Flyer">
+		</div>
+
+		<div class="event-content">
+			<div class="event-date">26 07 2025</div>
+			<h2 class="event-title">Rock Legends Reunion</h2>
+			<p class="event-time">Start: 19:30 • End: 23:00</p>
+			<p class="event-location">Madison Square Garden, NYC</p>
+
+			<!-- Countdown -->
+			<div class="event-countdown" id="countdown">
+				<span>12d 04h 22m 10s</span>
+			</div>
+
+			<button class="event-btn">Buy Tickets</button>
+		</div>
+	</div>
+}
